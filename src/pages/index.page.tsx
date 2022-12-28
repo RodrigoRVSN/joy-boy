@@ -1,4 +1,6 @@
+import { Canvas } from '@react-three/fiber'
 import Head from 'next/head'
+import { Experience } from '@App/components/Experiece'
 
 export default function Home (): JSX.Element {
   return (
@@ -6,17 +8,10 @@ export default function Home (): JSX.Element {
       <Head>
         <title>Home</title>
       </Head>
-      <h1>
-        Hello! Template made by
-        <a
-          target="_blank"
-          href="https://github.com/RodrigoRVSN"
-          rel="noreferrer"
-        >
-          Rodrigo Victor
-        </a>
-      </h1>
-      <button>oi</button>
+
+      <Canvas >
+        <Experience />
+      </Canvas>
     </>
   )
 }
