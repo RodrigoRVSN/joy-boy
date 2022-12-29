@@ -12,7 +12,7 @@ export const Ship = () => {
 
     move(delta)
 
-    manageCamera(body, state)
+    manageCamera(body, state, delta)
   })
 
   const ship = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/ship-dark/model.gltf')
