@@ -1,15 +1,15 @@
 import { Canvas } from '@react-three/fiber'
 import Head from 'next/head'
-import { Experience } from '@App/components/Experiece'
+import { Experience } from '@App/components/Experience'
 
 export default function Home (): JSX.Element {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Portfólio - Rodrigo Victor</title>
       </Head>
 
-      <Canvas >
+      <Canvas shadows>
         <Experience />
       </Canvas>
     </>
