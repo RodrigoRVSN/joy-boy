@@ -19,6 +19,7 @@
     "import/no-named-as-default-member": 0,
     "react/react-in-jsx-scope": 0,
     "react/no-unknown-property": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
     "no-undef": 0,
     "import/order": [
       "error",
