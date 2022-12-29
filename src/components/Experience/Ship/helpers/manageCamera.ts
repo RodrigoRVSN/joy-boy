@@ -9,9 +9,9 @@ export const manageCamera = (body: RefObject<RigidBodyApi>, state: RootState) =>
 
   const cameraPosition = new Vector3()
   cameraPosition.copy(bodyPosition)
-  cameraPosition.z += 6
-  cameraPosition.x += 1
-  cameraPosition.y += 7
+  cameraPosition.z += 12
+  cameraPosition.x += 7
+  cameraPosition.y += 12
 
   const cameraTarget = new Vector3()
   cameraTarget.copy(bodyPosition)

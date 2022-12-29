@@ -13,6 +13,10 @@ export const Experience = () => {
       <OrbitControls makeDefault />
 
       <Physics>
+        <mesh castShadow scale={1} position={[1, 0, 1]}>
+          <boxGeometry />
+          <meshStandardMaterial />
+        </mesh>
         <Ship />
         <Ocean />
       </Physics>

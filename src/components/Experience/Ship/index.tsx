@@ -1,3 +1,4 @@
+import { useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 import { RigidBody } from '@react-three/rapier'
 import { manageCamera } from './helpers/manageCamera'
@@ -14,20 +15,17 @@ export const Ship = () => {
     manageCamera(body, state)
   })
 
+  const ship = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/ship-dark/model.gltf')
+
   return (
     <RigidBody
       ref={body}
-      colliders='ball'
       restitution={0.2}
       friction={0}
-      position={[0, 1, 0]}
       linearDamping={0.5}
       angularDamping={0.5}
     >
-      <mesh castShadow>
-        <sphereGeometry />
-        <meshStandardMaterial />
-      </mesh>
+      <primitive object={ship.scene}/>
     </RigidBody>
   )
 }

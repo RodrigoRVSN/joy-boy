@@ -12,8 +12,8 @@ export const useMoveShip = () => {
     const impulse = { x: 0, y: 0, z: 0 }
     const torque = { x: 0, y: 0, z: 0 }
 
-    const impulseStrength = 6 * delta
-    const torqueStrength = 2 * delta
+    const impulseStrength = 6 * delta * 300
+    const torqueStrength = 2 * delta * 300
 
     if (forward) {
       impulse.z -= impulseStrength
