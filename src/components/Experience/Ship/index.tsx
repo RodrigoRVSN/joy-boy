@@ -24,6 +24,7 @@ export const Ship = () => {
       friction={0}
       linearDamping={0.5}
       angularDamping={0.5}
+      mass={100}
     >
       <primitive object={ship.scene}/>
     </RigidBody>

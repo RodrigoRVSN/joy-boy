@@ -1,4 +1,6 @@
 import { Physics } from '@react-three/rapier'
+import { Lights } from '../Lights'
+import { Islands } from './Islands'
 import { Ocean } from './Ocean'
 import { Ship } from './Ship'
 
@@ -7,14 +9,13 @@ export const Experience = () => {
     <>
       <color args={['blue']} attach='background' />
 
-      <directionalLight position={ [1, 2, 3] } intensity={ 1.5 } />
-
       <Physics>
-        <mesh castShadow scale={1} position={[1, 0, 1]}>
-          <boxGeometry />
-          <meshStandardMaterial />
-        </mesh>
+        <Lights />
+
+        <Islands />
+
         <Ship />
+
         <Ocean />
       </Physics>
     </>

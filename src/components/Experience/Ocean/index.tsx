@@ -5,8 +5,13 @@ const WORLD_SIZE = 10000
 export const Ocean = () => {
   return (
     <RigidBody type='fixed'>
-      <mesh scale={WORLD_SIZE} position={[0, -(WORLD_SIZE + 0.5), 0]} receiveShadow>
-        <sphereGeometry />
+      <mesh
+        scale={WORLD_SIZE}
+        receiveShadow
+        rotation-x={-Math.PI * 0.5}
+        position-y={-1}
+      >
+        <planeGeometry />
         <meshStandardMaterial color="cyan" />
       </mesh>
     </RigidBody>

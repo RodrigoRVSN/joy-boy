@@ -9,11 +9,11 @@ export const useMoveShip = () => {
   const move = (delta: number) => {
     const { forward, backward, leftward, rightward } = getKeys()
 
-    const impulse = { x: 0, y: 0, z: 0 }
-    const torque = { x: 0, y: 0, z: 0 }
+    const impulse = { x: 0, y: 1, z: 0 }
+    const torque = { x: 0, y: 1, z: 0 }
 
-    const impulseStrength = 6 * delta * 300
-    const torqueStrength = 2 * delta * 300
+    const impulseStrength = 6 * delta * 3000
+    const torqueStrength = 2 * delta * 3000
 
     if (forward) {
       impulse.z -= impulseStrength
