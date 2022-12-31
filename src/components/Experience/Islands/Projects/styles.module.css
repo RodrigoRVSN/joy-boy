@@ -31,7 +31,7 @@
 .project__cta {
   background: linear-gradient(to left, #00b4d8, #0077b6);
   text-decoration: none;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem;
   border-radius: 1rem;
   font-size: 1rem;
   color: #edf2f4;
@@ -77,4 +77,34 @@
   width: fit-content;
   padding: 0.1rem 1rem;
   border-radius: 0.25rem;
+}
+
+.arrow_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.arrow_left,
+.arrow_right {
+  margin-top: 0.25rem;
+  background: linear-gradient(to left, #00b4d8, #0077b6);
+
+  width: 48%;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: none;
+  color: white;
+}
+
+.arrow_container > :disabled {
+  background: #adb5bd;
+  cursor: not-allowed;
+}
+
+.arrow_left {
+  left: 1rem;
+}
+
+.arrow_right {
+  right: 1rem;
 }

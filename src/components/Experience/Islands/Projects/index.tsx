@@ -1,13 +1,12 @@
-import { Html, Text } from '@react-three/drei'
-import { GithubLogo, X } from 'phosphor-react'
+import { Html } from '@react-three/drei'
+import { X } from 'phosphor-react'
 import { useGetProjectsQuery } from '@App/core/graphql/generated'
 import { GenericIsland } from '../components/GenericIsland'
+import { ProjectModal } from './ProjectModal'
 import styles from './styles.module.css'
 
 export const Projects = () => {
   const { data } = useGetProjectsQuery()
-
-  const project = data?.projects[0]
 
   return (
     <>
@@ -25,31 +24,7 @@ export const Projects = () => {
         <main className={styles.project}>
           <X size={32} className={styles.project__close}/>
 
-          <header className={styles.project__header}>
-            <h1 className={styles.project__title}>{project?.title}</h1>
-
-            <a
-              target='_blank'
-              className={styles.project__cta}
-              href={project?.githubUrl} rel="noreferrer"
-            >
-              REPO
-              <GithubLogo />
-            </a>
-          </header>
-
-          <p className={styles.project__description}>{project?.description}</p>
-
-          <div className={styles.project__stack_container}>
-            {project?.stack.map(stack => (
-              <span className={styles.project__stack} key={stack}>{stack}</span>
-            ))}
-          </div>
-
-          <iframe
-            className={styles.project__demo}
-            src={String(project?.demo)}
-          />
+          {data && <ProjectModal projects={data!.projects} />}
         </main>
       </Html>
 
