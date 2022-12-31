@@ -1,3 +1,4 @@
+import { MeshReflectorMaterial } from '@react-three/drei'
 import { RigidBody } from '@react-three/rapier'
 
 const WORLD_SIZE = 10000
@@ -12,7 +13,7 @@ export const Ocean = () => {
         position-y={-1}
       >
         <planeGeometry />
-        <meshStandardMaterial color="cyan" />
+        <MeshReflectorMaterial mirror={0.3} color="cyan" />
       </mesh>
     </RigidBody>
   )

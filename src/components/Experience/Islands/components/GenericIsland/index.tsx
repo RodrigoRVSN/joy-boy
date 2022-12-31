@@ -33,14 +33,16 @@ export const GenericIsland = ({ objectUrl, islandNumber = 1, position, title, ro
       position={position}
       restitution={0.2}
     >
-      <Text
-        font='/fonts/bangers-regular.woff'
-        position-y={10}
-        fontSize={3}
-        color='salmon'
-      >
-        {title}
-      </Text>
+      <Float>
+        <Text
+          font='/fonts/bangers-regular.woff'
+          position-y={10}
+          fontSize={3}
+          color='salmon'
+        >
+          {title}
+        </Text>
+      </Float>
 
       <group
         scale={1}
