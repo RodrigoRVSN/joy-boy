@@ -31,9 +31,9 @@ export const manageCamera = (body: RefObject<RigidBodyApi>, state: RootState, de
   const position = new Vector3(0, 0, 0)
   position.applyQuaternion(quaternion)
 
-  const test = cameraPosition.clone().add(wDir.clone().multiplyScalar(10).add(new Vector3(0, 0.3, 0)))
+  const orientedPosition = cameraPosition.clone().add(wDir.clone().multiplyScalar(10).add(new Vector3(0, 0.3, 0)))
 
-  smoothedCameraPosition.lerp(test, 5 * delta)
+  smoothedCameraPosition.lerp(orientedPosition, 5 * delta)
   smoothedCameraTarget.lerp(cameraTarget, 5 * delta)
 
   state.camera.position.copy(smoothedCameraPosition)

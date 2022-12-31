@@ -5,7 +5,7 @@ export const Loading = () => {
   const teste = useProgress()
 
   return (
-      <Html center className={styles.loading__container}>
+    <Html center className={styles.loading__container}>
       <div className={styles.wood}>
         <div className={styles.pointer_1}>
           <div className={styles.triangle__red}/>
