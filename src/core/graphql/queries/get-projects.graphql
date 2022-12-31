@@ -1,0 +1,10 @@
+query GetProjects {
+  projects {
+    demo
+    description
+    githubUrl
+    title
+    slug
+    stack
+  }
+}

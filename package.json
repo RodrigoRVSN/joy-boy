@@ -11,13 +11,16 @@
     "test:watch": "vitest",
     "test:cov": "vitest run --coverage",
     "prepare": "husky install",
-    "lint": "eslint . --fix"
+    "lint": "eslint . --fix",
+    "codegen": "graphql-codegen"
   },
   "dependencies": {
+    "@apollo/client": "^3.7.3",
     "@react-three/drei": "^9.48.1",
     "@react-three/fiber": "^8.9.1",
     "@react-three/rapier": "^0.11.2",
     "@types/three": "^0.146.0",
+    "graphql": "^16.6.0",
     "next": "13.1.1",
     "react": "^18",
     "react-dom": "^18",
@@ -26,6 +29,10 @@
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@graphql-codegen/cli": "^2.16.2",
+    "@graphql-codegen/typescript": "^2.8.6",
+    "@graphql-codegen/typescript-operations": "^2.5.11",
+    "@graphql-codegen/typescript-react-apollo": "^3.3.7",
     "@testing-library/react": "^13.4.0",
     "@types/node": "^18.11.18",
     "@types/react": "^18",
