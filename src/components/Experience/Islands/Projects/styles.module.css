@@ -1,33 +1,3 @@
-.container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 1rem 2rem;
-  color: #edf2f4;
-  overflow: auto;
-}
-
-
-.project {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  max-width: 1200px;
-  background-color: rgb(23, 22, 22);
-  border-radius: 1rem;
-  padding: 2rem 2rem;
-  position: relative;
-}
-
-.project__close {
-  position: absolute;
-  top: 0.5rem;
-  right: 0.5rem;
-  cursor: pointer;
-}
-
 .project__cta {
   background: linear-gradient(to left, #00b4d8, #0077b6);
   text-decoration: none;

@@ -10,13 +10,21 @@ type GenericIslandProps = {
   position: Object3DProps['position']
   title: string
   rotationY: number
+  onClickObject: () => void
 }
 
 type Geometry = {
   geometry: BufferGeometry
 }
 
-export const GenericIsland = ({ objectUrl, islandNumber = 1, position, title, rotationY }: GenericIslandProps) => {
+export const GenericIsland = ({
+  objectUrl,
+  islandNumber = 1,
+  position,
+  title,
+  rotationY,
+  onClickObject
+}: GenericIslandProps) => {
   const [isHovering, setIsHovering] = useState(false)
 
   const object = useGLTF(objectUrl)
@@ -63,6 +71,7 @@ export const GenericIsland = ({ objectUrl, islandNumber = 1, position, title, ro
         object={object.scene}
         onPointerEnter={() => setIsHovering(true)}
         onPointerLeave={() => setIsHovering(false)}
+        onClick={onClickObject}
       />
 
       {isHovering && (
