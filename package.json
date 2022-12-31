@@ -19,7 +19,7 @@
     "@react-three/drei": "^9.48.1",
     "@react-three/fiber": "^8.9.1",
     "@react-three/rapier": "^0.11.2",
-    "@types/three": "^0.146.0",
+    "@types/three": "^0.147.1",
     "graphql": "^16.6.0",
     "next": "13.1.1",
     "phosphor-react": "^1.4.1",
