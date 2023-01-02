@@ -2,19 +2,20 @@ import { Float, Text, useGLTF } from '@react-three/drei'
 import { Object3DProps } from '@react-three/fiber'
 import { RigidBody } from '@react-three/rapier'
 import { useEffect, useState } from 'react'
-import { BufferGeometry } from 'three'
+import { BufferGeometry, Material } from 'three'
 
 type GenericIslandProps = {
   objectUrl: string
   islandNumber: number
   position: Object3DProps['position']
   title: string
-  rotationY: number
+  rotationY?: number
   onClickObject: () => void
 }
 
 type Geometry = {
   geometry: BufferGeometry
+  material: Material
 }
 
 export const GenericIsland = ({
@@ -22,13 +23,13 @@ export const GenericIsland = ({
   islandNumber = 1,
   position,
   title,
-  rotationY,
+  rotationY = 0,
   onClickObject
 }: GenericIslandProps) => {
   const [isHovering, setIsHovering] = useState(false)
 
   const object = useGLTF(objectUrl)
-  const { nodes, materials } = useGLTF(`/assets/islands/island-${islandNumber}.glb`)
+  const { nodes } = useGLTF(`/assets/islands/island-${islandNumber}.glb`)
 
   useEffect(() => {
     document.body.style.cursor = isHovering ? 'pointer' : 'auto'
@@ -60,18 +61,19 @@ export const GenericIsland = ({
             key={mesh.id}
             position={[10, 0, 0]}
             geometry={(mesh as unknown as Geometry).geometry}
-            material={materials.material}
+            material={(mesh as unknown as Geometry).material}
           />
         ))}
       </group>
 
       <primitive
         rotation-y={rotationY}
-        scale={3}
+        scale={2}
         object={object.scene}
         onPointerEnter={() => setIsHovering(true)}
         onPointerLeave={() => setIsHovering(false)}
         onClick={onClickObject}
+        position={[0, 1, 0]}
       />
 
       {isHovering && (
