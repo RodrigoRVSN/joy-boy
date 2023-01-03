@@ -17,7 +17,6 @@ export const About = () => {
   const handleCloseModal = () => {
     setIsAboutModalOpen(false)
   }
-  console.log(data?.abouts[0].images)
 
   return (
     <>
@@ -34,7 +33,7 @@ export const About = () => {
         isOpen={isAboutModalOpen}
         onCloseModal={handleCloseModal}
       >
-          {data && <AboutModal sections={data.abouts}/>}
+        {data && <AboutModal sections={data.abouts}/>}
       </GenericModal>
     </>
   )
