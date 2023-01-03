@@ -5,7 +5,7 @@
   width: 100vw;
   height: 100vh;
   padding: 1rem 2rem;
-  color: #edf2f4;
+  color: #1A1C1A;
   overflow: auto;
 }
 
@@ -14,10 +14,12 @@
   flex-direction: column;
   margin: auto;
   max-width: 1200px;
-  background-color: rgb(23, 22, 22);
+  background: radial-gradient(#f2eecb, #C7A575);
   border-radius: 1rem;
   padding: 2rem 2rem;
   position: relative;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
 }
 
 .modal__close {
