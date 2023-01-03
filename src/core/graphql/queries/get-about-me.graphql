@@ -1,0 +1,13 @@
+query GetAboutMe {
+  abouts {
+    title
+    description {
+      raw
+    }
+    images {
+      id
+      url
+      fileName
+    } 
+  }
+}

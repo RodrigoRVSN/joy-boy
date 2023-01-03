@@ -1,17 +1,23 @@
 import { useState } from 'react'
 import { GenericModal } from '@App/components/GenericModal'
+import { useGetAboutMeLazyQuery } from '@App/core/graphql/generated'
 import { GenericIsland } from '../components/GenericIsland'
+import { AboutModal } from './AboutModal'
 
 export const About = () => {
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
+  const [getAboutMe, { data }] = useGetAboutMeLazyQuery({
+  })
 
   const handleOpenModal = () => {
     setIsAboutModalOpen(true)
+    getAboutMe()
   }
 
   const handleCloseModal = () => {
     setIsAboutModalOpen(false)
   }
+  console.log(data?.abouts[0].images)
 
   return (
     <>
@@ -28,7 +34,7 @@ export const About = () => {
         isOpen={isAboutModalOpen}
         onCloseModal={handleCloseModal}
       >
-        <h1>oi</h1>
+          {data && <AboutModal sections={data.abouts}/>}
       </GenericModal>
     </>
   )
