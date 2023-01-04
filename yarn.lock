@@ -1626,15 +1626,15 @@
   resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.6.1.tgz#913d3a68c5cbc1124fdb18eff919432f7b6abdde"
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
-"@react-three/drei@^9.48.1":
-  version "9.48.1"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.48.1.tgz#d6466f5f9dc9a8b0b83e817ff8d54987d5d7211d"
-  integrity sha512-48g2FbQoioOtCf5SFtHPFMMBXT3cDBpZBKAz/2lPoWdCEmitRFllwCnsqmxAtRUVmqAl4tYmmkAXu3Jy3PZUFQ==
+"@react-three/drei@^9.50.4":
+  version "9.50.4"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.50.4.tgz#8217ec86b2ccd507a3134539df184ad9123c84c8"
+  integrity sha512-GcKbh4OjJo/0fwke2l/oqTz/swgTUbgVde+j8d9zFlSc2QCjsIaTz9vNDL2yN+fUKG+D7svZqxR5scX+s2Nd9A==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/three" "^9.3.1"
     "@use-gesture/react" "^10.2.0"
-    detect-gpu "^5.0.1"
+    detect-gpu "^5.0.5"
     glsl-noise "^0.0.0"
     lodash.clamp "^4.0.3"
     lodash.omit "^4.5.0"
@@ -1644,7 +1644,7 @@
     react-merge-refs "^1.1.0"
     stats.js "^0.17.0"
     suspend-react "^0.0.8"
-    three-mesh-bvh "^0.5.19"
+    three-mesh-bvh "^0.5.21"
     three-stdlib "^2.20.4"
     troika-three-text "^0.47.1"
     utility-types "^3.10.0"
@@ -3137,10 +3137,10 @@ dependency-graph@^0.11.0:
   resolved "https://registry.yarnpkg.com/dependency-graph/-/dependency-graph-0.11.0.tgz#ac0ce7ed68a54da22165a85e97a01d53f5eb2e27"
   integrity sha512-JeMq7fEshyepOWDfcfHK06N3MhyPhz++vtqWhMT5O9A3K42rdsEDpfdVqjaqaAhsw6a+ZqeDvQVtD0hFHQWrzg==
 
-detect-gpu@^5.0.1:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.4.tgz#4495c303ff181d0c64bf9f54310871fe957c8e4f"
-  integrity sha512-DyAa8aL2yjMNHb85a51eWP9DPSKjKGvgdcUSRzUNzHgx4QckxOX8RUTUFCJQiSxEegzP7O0UeVNkm7TIUyMW8A==
+detect-gpu@^5.0.5:
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.5.tgz#92eb6f218ba578dac6a4a892c8a1214ef0bdcf88"
+  integrity sha512-gKBKx8mj0Fi/8DnjuzxU+aNYF1yWvPxtiOV9o72539wW0HP3ZTJVol/0FUasvdxIY1Bhi19SwIINqXGO+RB/sA==
   dependencies:
     webgl-constants "^1.1.1"
 
@@ -6621,10 +6621,10 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-three-mesh-bvh@^0.5.19:
-  version "0.5.19"
-  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.5.19.tgz#72d489856561d01ef7d4add81f0c82d3fb644d09"
-  integrity sha512-Q8huT0NautyR4afW0oMlOz8a4qm3b1jQ1ccMLF/TZ0rA4i58HljsnBjCLEDLQtIINZyLtZPdw60mrD81V/TZDA==
+three-mesh-bvh@^0.5.21:
+  version "0.5.21"
+  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.5.21.tgz#e08f5f3052d624cce36d0975692949c02359832f"
+  integrity sha512-TGXPk7YwtlU5rgQJYA25OT6yAdBMeekfC4BTkGNtTWA5glb2rmEpjxvhZncRQSl73QZir2LFOQT0FjfzgG55xw==
 
 three-stdlib@^2.15.0, three-stdlib@^2.20.4:
   version "2.21.1"
