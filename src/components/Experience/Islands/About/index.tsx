@@ -6,8 +6,7 @@ import { AboutModal } from './AboutModal'
 
 export const About = () => {
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
-  const [getAboutMe, { data }] = useGetAboutMeLazyQuery({
-  })
+  const [getAboutMe, { data }] = useGetAboutMeLazyQuery()
 
   const handleOpenModal = () => {
     setIsAboutModalOpen(true)
@@ -25,7 +24,6 @@ export const About = () => {
         objectUrl='/assets/straw-hat.glb'
         islandNumber={2}
         position={[-30, 0, -40]}
-        rotationY={-Math.PI / 4}
         onClickObject={handleOpenModal}
       />
 

@@ -1,17 +1,14 @@
-
 import { useState } from 'react'
 import { GenericModal } from '@App/components/GenericModal'
-import { useGetProjectsLazyQuery, useGetProjectsQuery } from '@App/core/graphql/generated'
 import { GenericIsland } from '../components/GenericIsland'
-import { ProjectModal } from './ProjectModal'
 
-export const Projects = () => {
+export const Experience = () => {
+  // const { data } = useGetProjectsQuery()
+
   const [isProjectsModalOpen, setIsProjectsModalOpen] = useState(false)
-  const [getAboutMe, { data }] = useGetProjectsLazyQuery()
 
   const handleOpenModal = () => {
     setIsProjectsModalOpen(true)
-    getAboutMe()
   }
 
   const handleCloseModal = () => {
@@ -21,11 +18,10 @@ export const Projects = () => {
   return (
     <>
       <GenericIsland
-        title='Projects'
-        objectUrl='https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf'
+        title='Experience'
+        objectUrl='https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/spilling-coffee/model.gltf'
         islandNumber={1}
-        position={[30, 0, -30]}
-        rotationY={-Math.PI / 4}
+        position={[20, 0, -90]}
         onClickObject={handleOpenModal}
       />
 
@@ -33,7 +29,7 @@ export const Projects = () => {
         isOpen={isProjectsModalOpen}
         onCloseModal={handleCloseModal}
       >
-        {data && <ProjectModal projects={data!.projects} />}
+        <h1>opa</h1>
       </GenericModal>
     </>
   )
