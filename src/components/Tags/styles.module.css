@@ -1,0 +1,14 @@
+.tags__container {
+  display: flex;
+  gap: 0.5rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: linear-gradient(to left, var(--primary), var(--primary-dark));
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}

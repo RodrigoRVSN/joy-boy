@@ -4,6 +4,10 @@
   gap: 3rem;
 }
 
+.experience__time {
+  font-size: 0.9rem;
+}
+
 .experience__container {
   border-left: 1px solid var(--background);
   padding-left: 1rem;
@@ -15,11 +19,11 @@
 }
 
 .experience__company {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 0.5rem 0;
 }
 
-.experience__tags_container {
-  display: flex;
-  gap: 1rem;
+.experience__link {
+  color: var(--primary-dark);
+  text-decoration: none;
 }

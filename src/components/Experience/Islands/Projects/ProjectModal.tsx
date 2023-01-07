@@ -1,6 +1,8 @@
 
+import { Tag } from '@App/components/Tag'
 import { GithubLogo, ArrowLeft, ArrowRight } from 'phosphor-react'
 import { useState } from 'react'
+import { Tags } from '@App/components/Tags'
 import { GetProjectsQuery } from '@App/core/graphql/generated'
 import styles from './styles.module.css'
 
@@ -58,11 +60,7 @@ export const ProjectModal = ({ projects }: ProjectModalProps) => {
 
       <p className={styles.project__description}>{project?.description}</p>
 
-      <div className={styles.project__stack_container}>
-        {project?.stack.map(stack => (
-          <span className={styles.project__stack} key={stack}>{stack}</span>
-        ))}
-      </div>
+      <Tags tags={project.stack} />
 
       <iframe
         className={styles.project__demo}

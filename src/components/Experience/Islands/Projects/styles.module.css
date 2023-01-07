@@ -36,19 +36,6 @@
   border: 0;
 }
 
-.project__stack_container {
-  display: flex;
-  gap: 0.5rem;
-  margin: 1rem 0;
-}
-
-.project__stack {
-  background: linear-gradient(to left, var(--primary), var(--primary-dark));
-  width: fit-content;
-  padding: 0.1rem 1rem;
-  border-radius: 0.25rem;
-}
-
 .arrow_container {
   display: flex;
   justify-content: space-between;

@@ -1,4 +1,5 @@
 import { RichText } from '@graphcms/rich-text-react-renderer'
+import { Tags } from '@App/components/Tags'
 import { GetExperiencesQuery } from '@App/core/graphql/generated'
 import styles from './styles.module.css'
 
@@ -11,20 +12,25 @@ export const ExperienceModal = ({ experiences }: ExperienceModalProps) => {
     <section className={styles.experiences__container}>
       {experiences.map(experience => (
         <article key={experience.company} className={styles.experience__container}>
-          <time>{experience.initialDate}</time>
-          <time>{experience.finishDate || 'now'}</time>
+          <time className={styles.experience__time}>
+            {experience.initialDate} | {experience.finishDate || 'now'}
+          </time>
 
           <h1 className={styles.experience__position}>{experience.position}</h1>
           <h2 className={styles.experience__company}>{experience.company}</h2>
-          <RichText content={experience.description?.raw} />
 
-          <footer className={styles.experience__tags_container}>
-            {experience.tags?.map(tag => (
-              <span key={tag}>
-                {tag}
-              </span>
-            ))}
-          </footer>
+          <RichText
+            content={experience.description?.raw}
+            renderers={{
+              a: ({ children, ...rest }) => (
+                <a className={styles.experience__link} {...rest}>
+                  {children}
+                </a>
+              )
+            }}
+          />
+
+          <Tags tags={experience.tags} />
         </article>
       ))}
     </section>
