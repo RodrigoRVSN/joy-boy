@@ -1,63 +1,88 @@
-# 👕 Next.JS Template with Linter
+# joy-boy
 
-<br>
+<!--- https://shields.io --->
+
+![GitHub repo size](https://img.shields.io/github/repo-size/rodrigorvsn/joy-boy?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/rodrigorvsn/joy-boy?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/rodrigorvsn/joy-boy?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/rodrigorvsn/joy-boy?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/rodrigorvsn/joy-boy?style=for-the-badge)
 
 ___
-## 🔨 Tools:
+<!--- #################### mudar badges #################### --->
 
-- NextJS
+
+
+
+
+<!--- #################### mudar imagem exemplo #################### --->
+___
+> This is a NextJS template made with linters and patterns.
+___
+## 💻 Prerequisites
+
+- Install LTS Node version.
+- Fill `.env.local` with Hygraph variables.
+
+<!--- #################### mudar pré-requisitos  ####################--->
+___
+## 🛠 Tools used
+
+- Three.js
+- React Three Fiber
+- React Three Drei
+- React Three Rapier
 - Typescript
-- ESLint (Code Pattern)
-- Prettier (Formatter)
-- Husky (Pre-commit)
-- Vitest (Unit/Integration Test)
-- Cypress (Test E2E)
-- Bun
+- <b>Nextjs</b>
+- Graphql
+- Hygraph (Graph CMS)
+- Apollo Client
+
+
+<!--- #################### mudar ferramentas #################### --->
 ___
-## 🤺 How to use:
+## 🚀 Installing joy-boy
 
+To use, follow the steps:
 
 ```bash
-git clone https://github.com/rodrigorvsn/next-boilerplate-bunny.git
+git clone https://github.com/rodrigorvsn/joy-boy.git
 ```
 
 ```bash
-bun install
+yarn install
 ```
 
 ```bash
-bun dev
+yarn dev
 ```
 
-```bash
-bun test
-```
 
-```bash
-bun test:cov
-```
+## 📫 Contribuiting with joy-boy
 
-```bash
-bun lint
-```
+To contribue with joy-boy, follow the steps:
 
-```bash
-bun cy:run
-```
+1. Fork this repository.
+2. Create a branch: `git checkout -b <name_branch>`.
+3. Make the changes and confirm: `git commit -m '<message_commit>'`
+4. Send to original repository: `git push origin <main_branch> / <local>`
+5. Send the pull request.
 
-```bash
-bun cy:open
-```
-
+Alternatively, see the GitHub documentation at [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 ___
-## 🤖 Auto-formatting on save:
+## 🤝 Contributors
 
-Inside `/.vscode/settings.json` we set prettier as the default formatter, and also set `editor.codeActionsOnSave` to run:
+Made with ❤️ by:
 
-- **Lint:** `"source.fixAll.eslint"`
-- **Format:** `"source.fixAll.format"`
-
-___
-## ✅ Checking standards pre-commit:
-
-Using [husky](https://www.npmjs.com/package/husky) we can check all of our style standards to make sure our git commits are up to par. Check those checks out at [`.husky/pre-commit`](.husky/pre-commit)
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://github.com/rodrigorvsn.png" width="100px;" alt="Foto do Rodrigo Victor no GitHub"/><br>
+        <sub>
+          <b>Rodrigo Victor</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
