@@ -1,5 +1,5 @@
 .container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -20,6 +20,7 @@
   position: relative;
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
+  min-height: 90vh;
 }
 
 .modal__close {

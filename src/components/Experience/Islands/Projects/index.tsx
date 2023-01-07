@@ -6,7 +6,7 @@ import { ProjectModal } from './ProjectModal'
 
 export const Projects = () => {
   const [isProjectsModalOpen, setIsProjectsModalOpen] = useState(false)
-  const [getAboutMe, { data }] = useGetProjectsLazyQuery()
+  const [getAboutMe, { data, loading }] = useGetProjectsLazyQuery()
 
   const handleOpenModal = () => {
     setIsProjectsModalOpen(true)
@@ -31,6 +31,7 @@ export const Projects = () => {
       <GenericModal
         isOpen={isProjectsModalOpen}
         onCloseModal={handleCloseModal}
+        isLoading={loading}
       >
         {data && <ProjectModal projects={data!.projects} />}
       </GenericModal>

@@ -6,7 +6,7 @@ import { AboutModal } from './AboutModal'
 
 export const About = () => {
   const [isAboutModalOpen, setIsAboutModalOpen] = useState(false)
-  const [getAboutMe, { data }] = useGetAboutMeLazyQuery()
+  const [getAboutMe, { data, loading }] = useGetAboutMeLazyQuery()
 
   const handleOpenModal = () => {
     setIsAboutModalOpen(true)
@@ -32,6 +32,7 @@ export const About = () => {
       <GenericModal
         isOpen={isAboutModalOpen}
         onCloseModal={handleCloseModal}
+        isLoading={loading}
       >
         {data && <AboutModal sections={data.abouts}/>}
       </GenericModal>

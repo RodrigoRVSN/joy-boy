@@ -5,7 +5,7 @@ import { GenericIsland } from '../components/GenericIsland'
 import { ExperienceModal } from './ExperienceModal'
 
 export const Experience = () => {
-  const [getData, { data }] = useGetExperiencesLazyQuery()
+  const [getData, { data, loading }] = useGetExperiencesLazyQuery()
 
   const [isProjectsModalOpen, setIsProjectsModalOpen] = useState(false)
 
@@ -31,6 +31,7 @@ export const Experience = () => {
       <GenericModal
         isOpen={isProjectsModalOpen}
         onCloseModal={handleCloseModal}
+        isLoading={loading}
       >
         {data && <ExperienceModal experiences={data.experiences} />}
       </GenericModal>

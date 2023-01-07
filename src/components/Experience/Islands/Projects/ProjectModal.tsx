@@ -1,5 +1,3 @@
-
-import { Tag } from '@App/components/Tag'
 import { GithubLogo, ArrowLeft, ArrowRight } from 'phosphor-react'
 import { useState } from 'react'
 import { Tags } from '@App/components/Tags'

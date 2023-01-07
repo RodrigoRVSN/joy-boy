@@ -17,6 +17,7 @@
   height: 200px;
   border-radius: 50%;
   position: relative;
+  margin: auto;
 }
 
 .pointer_1,
