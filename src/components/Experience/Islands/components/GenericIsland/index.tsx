@@ -11,6 +11,7 @@ type GenericIslandProps = {
   title: string
   rotationY?: number
   onClickObject: () => void
+  objectScale?: number
 }
 
 type Geometry = {
@@ -24,7 +25,8 @@ export const GenericIsland = ({
   position,
   title,
   rotationY = 0,
-  onClickObject
+  onClickObject,
+  objectScale = 2
 }: GenericIslandProps) => {
   const [isHovering, setIsHovering] = useState(false)
 
@@ -68,7 +70,7 @@ export const GenericIsland = ({
 
       <primitive
         rotation-y={rotationY}
-        scale={2}
+        scale={objectScale}
         object={object.scene}
         onPointerEnter={() => setIsHovering(true)}
         onPointerLeave={() => setIsHovering(false)}
@@ -80,7 +82,7 @@ export const GenericIsland = ({
         <Float speed={10} floatingRange={[0, 0.5]} >
           <mesh
             scale={[10, 10, 2]}
-            position-y={2}
+            position={[-2, 2, -2]}
             rotation-x={Math.PI / 2}
             receiveShadow
           >

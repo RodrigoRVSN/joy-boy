@@ -24,8 +24,8 @@ export const Projects = () => {
         title='Projects'
         objectUrl='https://vazxmixjsiawhamofees.supabase.co/storage/v1/object/public/models/macbook/model.gltf'
         islandNumber={1}
-        position={[30, 0, -30]}
-        rotationY={-Math.PI / 4}
+        position={[-30, 0, -40]}
+        rotationY={Math.PI / 4}
         onClickObject={handleOpenModal}
       />
 

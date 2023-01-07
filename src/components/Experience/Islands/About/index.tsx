@@ -23,8 +23,10 @@ export const About = () => {
         title='About'
         objectUrl='/assets/straw-hat.glb'
         islandNumber={2}
-        position={[-30, 0, -40]}
+        position={[30, 0, -30]}
         onClickObject={handleOpenModal}
+        rotationY={Math.PI}
+        objectScale={1.5}
       />
 
       <GenericModal

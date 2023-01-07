@@ -1,0 +1,12 @@
+query GetExperiences {
+  experiences {
+    company
+    position
+    description {
+      raw
+    }
+    tag
+    initialDate
+    finishDate
+  }
+}
