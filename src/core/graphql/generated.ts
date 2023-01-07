@@ -5159,7 +5159,7 @@ export type GetAboutMeLazyQueryHookResult = ReturnType<typeof useGetAboutMeLazyQ
 export type GetAboutMeQueryResult = Apollo.QueryResult<GetAboutMeQuery, GetAboutMeQueryVariables>;
 export const GetExperiencesDocument = gql`
     query GetExperiences {
-  experiences {
+  experiences(orderBy: initialDate_DESC) {
     company
     position
     description {

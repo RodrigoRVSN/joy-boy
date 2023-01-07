@@ -1,7 +1,6 @@
-
 import { useState } from 'react'
 import { GenericModal } from '@App/components/GenericModal'
-import { useGetProjectsLazyQuery, useGetProjectsQuery } from '@App/core/graphql/generated'
+import { useGetProjectsLazyQuery } from '@App/core/graphql/generated'
 import { GenericIsland } from '../components/GenericIsland'
 import { ProjectModal } from './ProjectModal'
 

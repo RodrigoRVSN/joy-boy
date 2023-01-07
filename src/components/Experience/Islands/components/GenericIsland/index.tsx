@@ -82,7 +82,7 @@ export const GenericIsland = ({
         <Float speed={10} floatingRange={[0, 0.5]} >
           <mesh
             scale={[10, 10, 2]}
-            position={[-2, 2, -2]}
+            position={[0, 2, 1]}
             rotation-x={Math.PI / 2}
             receiveShadow
           >

@@ -1,5 +1,5 @@
 query GetExperiences {
-  experiences {
+  experiences (orderBy: initialDate_DESC) {
     company
     position
     description {
