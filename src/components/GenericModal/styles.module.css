@@ -14,7 +14,7 @@
   flex-direction: column;
   margin: auto;
   max-width: 1200px;
-  background: radial-gradient(#f2eecb, #C7A575);
+  background: radial-gradient(var(--secondary), var(--secondary-dark));
   border-radius: 1rem;
   padding: 2rem 2rem;
   position: relative;

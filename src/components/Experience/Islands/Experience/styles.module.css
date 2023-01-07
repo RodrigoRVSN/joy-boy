@@ -1,0 +1,25 @@
+.experiences__container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.experience__container {
+  border-left: 1px solid var(--background);
+  padding-left: 1rem;
+}
+
+.experience__position {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.experience__company {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.experience__tags_container {
+  display: flex;
+  gap: 1rem;
+}

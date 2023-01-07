@@ -1,10 +1,10 @@
 .project__cta {
-  background: linear-gradient(to left, #00b4d8, #0077b6);
+  background: linear-gradient(to left, var(--primary), var(--primary-dark));
   text-decoration: none;
   padding: 0.5rem 2rem;
   border-radius: 1rem;
   font-size: 1rem;
-  color: #edf2f4;
+  color: var(--text);
   transition: filter 0.3s ease-in;
   font-weight: 700;
   display: flex;
@@ -43,7 +43,7 @@
 }
 
 .project__stack {
-  background: linear-gradient(to left, #00b4d8, #0077b6);
+  background: linear-gradient(to left, var(--primary), var(--primary-dark));
   width: fit-content;
   padding: 0.1rem 1rem;
   border-radius: 0.25rem;
@@ -57,17 +57,17 @@
 .arrow_left,
 .arrow_right {
   margin-top: 0.25rem;
-  background: linear-gradient(to left, #00b4d8, #0077b6);
+  background: linear-gradient(to left, var(--primary), var(--primary-dark));
 
   width: 48%;
   cursor: pointer;
   border-radius: 1rem;
   border: none;
-  color: white;
+  color: var(--text);
 }
 
 .arrow_container > :disabled {
-  background: #adb5bd;
+  background: var(--disabled);
   cursor: not-allowed;
 }
 

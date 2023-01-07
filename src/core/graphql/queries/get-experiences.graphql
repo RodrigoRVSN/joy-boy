@@ -5,7 +5,7 @@ query GetExperiences {
     description {
       raw
     }
-    tag
+    tags
     initialDate
     finishDate
   }

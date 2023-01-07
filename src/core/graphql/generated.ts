@@ -1283,7 +1283,7 @@ export type Experience = Node & {
   scheduledIn: Array<ScheduledOperation>;
   /** System stage field */
   stage: Stage;
-  tag: Array<Scalars['String']>;
+  tags: Array<Scalars['String']>;
   /** The time the document was updated */
   updatedAt: Scalars['DateTime'];
   /** User that last updated this document */
@@ -1358,7 +1358,7 @@ export type ExperienceCreateInput = {
   finishDate?: InputMaybe<Scalars['Date']>;
   initialDate?: InputMaybe<Scalars['Date']>;
   position?: InputMaybe<Scalars['String']>;
-  tag?: InputMaybe<Array<Scalars['String']>>;
+  tags?: InputMaybe<Array<Scalars['String']>>;
   updatedAt?: InputMaybe<Scalars['DateTime']>;
 };
 
@@ -1521,15 +1521,15 @@ export type ExperienceManyWhereInput = {
   scheduledIn_none?: InputMaybe<ScheduledOperationWhereInput>;
   scheduledIn_some?: InputMaybe<ScheduledOperationWhereInput>;
   /** Matches if the field array contains *all* items provided to the filter and order does match */
-  tag?: InputMaybe<Array<Scalars['String']>>;
+  tags?: InputMaybe<Array<Scalars['String']>>;
   /** Matches if the field array contains *all* items provided to the filter */
-  tag_contains_all?: InputMaybe<Array<Scalars['String']>>;
+  tags_contains_all?: InputMaybe<Array<Scalars['String']>>;
   /** Matches if the field array does not contain any of the items provided to the filter */
-  tag_contains_none?: InputMaybe<Array<Scalars['String']>>;
+  tags_contains_none?: InputMaybe<Array<Scalars['String']>>;
   /** Matches if the field array contains at least one item provided to the filter */
-  tag_contains_some?: InputMaybe<Array<Scalars['String']>>;
+  tags_contains_some?: InputMaybe<Array<Scalars['String']>>;
   /** Matches if the field array does not contains *all* items provided to the filter or order does not match */
-  tag_not?: InputMaybe<Array<Scalars['String']>>;
+  tags_not?: InputMaybe<Array<Scalars['String']>>;
   updatedAt?: InputMaybe<Scalars['DateTime']>;
   /** All values greater than the given value. */
   updatedAt_gt?: InputMaybe<Scalars['DateTime']>;
@@ -1563,8 +1563,8 @@ export enum ExperienceOrderByInput {
   PositionDesc = 'position_DESC',
   PublishedAtAsc = 'publishedAt_ASC',
   PublishedAtDesc = 'publishedAt_DESC',
-  TagAsc = 'tag_ASC',
-  TagDesc = 'tag_DESC',
+  TagsAsc = 'tags_ASC',
+  TagsDesc = 'tags_DESC',
   UpdatedAtAsc = 'updatedAt_ASC',
   UpdatedAtDesc = 'updatedAt_DESC'
 }
@@ -1575,7 +1575,7 @@ export type ExperienceUpdateInput = {
   finishDate?: InputMaybe<Scalars['Date']>;
   initialDate?: InputMaybe<Scalars['Date']>;
   position?: InputMaybe<Scalars['String']>;
-  tag?: InputMaybe<Array<Scalars['String']>>;
+  tags?: InputMaybe<Array<Scalars['String']>>;
 };
 
 export type ExperienceUpdateManyInlineInput = {
@@ -1601,7 +1601,7 @@ export type ExperienceUpdateManyInput = {
   finishDate?: InputMaybe<Scalars['Date']>;
   initialDate?: InputMaybe<Scalars['Date']>;
   position?: InputMaybe<Scalars['String']>;
-  tag?: InputMaybe<Array<Scalars['String']>>;
+  tags?: InputMaybe<Array<Scalars['String']>>;
 };
 
 export type ExperienceUpdateManyWithNestedWhereInput = {
@@ -1789,15 +1789,15 @@ export type ExperienceWhereInput = {
   scheduledIn_none?: InputMaybe<ScheduledOperationWhereInput>;
   scheduledIn_some?: InputMaybe<ScheduledOperationWhereInput>;
   /** Matches if the field array contains *all* items provided to the filter and order does match */
-  tag?: InputMaybe<Array<Scalars['String']>>;
+  tags?: InputMaybe<Array<Scalars['String']>>;
   /** Matches if the field array contains *all* items provided to the filter */
-  tag_contains_all?: InputMaybe<Array<Scalars['String']>>;
+  tags_contains_all?: InputMaybe<Array<Scalars['String']>>;
   /** Matches if the field array does not contain any of the items provided to the filter */
-  tag_contains_none?: InputMaybe<Array<Scalars['String']>>;
+  tags_contains_none?: InputMaybe<Array<Scalars['String']>>;
   /** Matches if the field array contains at least one item provided to the filter */
-  tag_contains_some?: InputMaybe<Array<Scalars['String']>>;
+  tags_contains_some?: InputMaybe<Array<Scalars['String']>>;
   /** Matches if the field array does not contains *all* items provided to the filter or order does not match */
-  tag_not?: InputMaybe<Array<Scalars['String']>>;
+  tags_not?: InputMaybe<Array<Scalars['String']>>;
   updatedAt?: InputMaybe<Scalars['DateTime']>;
   /** All values greater than the given value. */
   updatedAt_gt?: InputMaybe<Scalars['DateTime']>;
@@ -5107,7 +5107,7 @@ export type GetAboutMeQuery = { __typename?: 'Query', abouts: Array<{ __typename
 export type GetExperiencesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetExperiencesQuery = { __typename?: 'Query', experiences: Array<{ __typename?: 'Experience', company: string, position?: string | null, tag: Array<string>, initialDate?: any | null, finishDate?: any | null, description?: { __typename?: 'RichText', raw: any } | null }> };
+export type GetExperiencesQuery = { __typename?: 'Query', experiences: Array<{ __typename?: 'Experience', company: string, position?: string | null, tags: Array<string>, initialDate?: any | null, finishDate?: any | null, description?: { __typename?: 'RichText', raw: any } | null }> };
 
 export type GetProjectsQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -5165,7 +5165,7 @@ export const GetExperiencesDocument = gql`
     description {
       raw
     }
-    tag
+    tags
     initialDate
     finishDate
   }

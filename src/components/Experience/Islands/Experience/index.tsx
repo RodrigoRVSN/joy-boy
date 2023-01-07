@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { GenericModal } from '@App/components/GenericModal'
 import { useGetExperiencesLazyQuery } from '@core/graphql/generated'
 import { GenericIsland } from '../components/GenericIsland'
+import { ExperienceModal } from './ExperienceModal'
 
 export const Experience = () => {
   const [getData, { data }] = useGetExperiencesLazyQuery()
@@ -31,9 +32,7 @@ export const Experience = () => {
         isOpen={isProjectsModalOpen}
         onCloseModal={handleCloseModal}
       >
-        {data?.experiences.map(experience => (
-          <h1 key={experience.company}>{experience.company}</h1>
-        ))}
+        {data && <ExperienceModal experiences={data.experiences} />}
       </GenericModal>
     </>
   )

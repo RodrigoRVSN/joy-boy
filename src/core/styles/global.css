@@ -4,6 +4,19 @@
   padding: 0;
 }
 
+:root {
+  --background:  rgb(23, 22, 22);
+  --glass: cyan;
+  --wood: #BA8C63;
+  --text: rgb(244, 237, 237);
+  --red: #f00;
+  --disabled: #adb5bd;
+  --primary: #00b4d8;
+  --primary-dark: #0077b6;
+  --secondary: #f2eecb;
+  --secondary-dark: #C7A575;
+}
+
 html,
 body,
 #__next {  
@@ -14,6 +27,6 @@ body,
   height: 100%;
   overflow: hidden;
 
-  background-color: rgb(23, 22, 22);
+  background-color: var(--background);
   font-family: 'Pirata One', 'Times New Roman', Times, serif;
 }

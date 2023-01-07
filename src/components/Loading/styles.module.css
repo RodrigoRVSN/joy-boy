@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  color: white;
+  color: var(--text);
   gap: 2rem;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .wood {
-  background-color: #BA8C63;
+  background-color: var(--wood);
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -22,7 +22,7 @@
 .pointer_1,
 .pointer_2,
 .pointer_3 {
-  background-color: cyan;
+  background-color: var(--glass);
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
@@ -59,11 +59,11 @@
 }
 
 .triangle__red {
-  border-bottom: 30px solid #f00;
+  border-bottom: 30px solid var(--red);
 } 
 
 .triangle__white {
-  border-top: 30px solid white;
+  border-top: 30px solid var(--text);
 } 
 
 @keyframes rotate {
