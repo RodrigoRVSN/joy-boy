@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { GenericModal } from '@App/components/GenericModal'
-import { useGetAboutMeLazyQuery } from '@App/core/graphql/generated'
+import { useGetAboutMeLazyQuery } from '@App/core/graphql/queries.generated'
 import { GenericIsland } from '../components/GenericIsland'
 import { AboutModal } from './AboutModal'
 

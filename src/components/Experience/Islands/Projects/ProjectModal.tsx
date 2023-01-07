@@ -3,7 +3,7 @@ import { Tag } from '@App/components/Tag'
 import { GithubLogo, ArrowLeft, ArrowRight } from 'phosphor-react'
 import { useState } from 'react'
 import { Tags } from '@App/components/Tags'
-import { GetProjectsQuery } from '@App/core/graphql/generated'
+import { GetProjectsQuery } from '@App/core/graphql/queries.generated'
 import styles from './styles.module.css'
 
 type ProjectModalProps = {

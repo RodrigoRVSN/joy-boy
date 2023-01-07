@@ -3,7 +3,7 @@ schema: 'https://api-sa-east-1.hygraph.com/v2/clcb4lsy12ywp01ulfvhkcx5g/master'
 documents: './src/core/graphql/**/*.graphql'
 
 generates:
-  ./src/core/graphql/generated.ts:
+  ./src/core/graphql/queries.generated.ts:
     plugins:
       - typescript
       - typescript-operations

@@ -1,6 +1,6 @@
 import { RichText } from '@graphcms/rich-text-react-renderer'
 import { Tags } from '@App/components/Tags'
-import { GetExperiencesQuery } from '@App/core/graphql/generated'
+import { GetExperiencesQuery } from '@App/core/graphql/queries.generated'
 import styles from './styles.module.css'
 
 type ExperienceModalProps = {

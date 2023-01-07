@@ -8,3 +8,4 @@ cypress
 coverage
 **.bun
 **.js
+**.generated.ts

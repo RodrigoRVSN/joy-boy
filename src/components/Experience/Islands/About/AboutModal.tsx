@@ -1,6 +1,6 @@
 import { RichText } from '@graphcms/rich-text-react-renderer'
 import Image from 'next/image'
-import { GetAboutMeQuery } from '@App/core/graphql/generated'
+import { GetAboutMeQuery } from '@App/core/graphql/queries.generated'
 import styles from './styles.module.css'
 
 type AboutModalProps = {
