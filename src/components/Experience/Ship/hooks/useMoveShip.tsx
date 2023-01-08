@@ -7,22 +7,17 @@ export const useMoveShip = () => {
   const [_, getKeys] = useKeyboardControls()
 
   const move = (delta: number) => {
-    const { forward, backward, leftward, rightward } = getKeys()
+    const { forward, leftward, rightward } = getKeys()
 
-    const impulse = { x: 0, y: 1, z: 0 }
-    const torque = { x: 0, y: 1, z: 0 }
+    const impulse = { x: 0, y: 0, z: 0 }
+    const torque = { x: 0, y: 0, z: 0 }
 
-    const impulseStrength = 6 * delta * 3000
-    const torqueStrength = 2 * delta * 3000
+    const impulseStrength = 6 * delta * 4000
+    const torqueStrength = 2 * delta * 4000
 
     if (forward) {
       impulse.z -= impulseStrength
       torque.x -= torqueStrength
-    }
-
-    if (backward) {
-      impulse.z += impulseStrength
-      torque.x += torqueStrength
     }
 
     if (leftward) {
