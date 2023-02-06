@@ -769,10 +769,10 @@
     debug "^3.1.0"
     lodash.once "^4.1.1"
 
-"@dimforge/rapier3d-compat@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@dimforge/rapier3d-compat/-/rapier3d-compat-0.9.0.tgz#c1a3c41fa39ae7d8dde22ef628baedf2b8f24dad"
-  integrity sha512-zjgpXS/fFx1lZqjW1DfVUEaRHFpekzWjF6eSGb/xeEUf74YO0NDlQ93Hj0oI2k+i6QIoQk9KcIaEGwQZkullrw==
+"@dimforge/rapier3d-compat@0.11.1":
+  version "0.11.1"
+  resolved "https://registry.yarnpkg.com/@dimforge/rapier3d-compat/-/rapier3d-compat-0.11.1.tgz#24cdf14ea7c6551242f186133c0b09ada310803d"
+  integrity sha512-Xt3KcvwxnTZxjZ3uA4Qx5S9LoAqCvj4mTzcSwdPnVpM0F/ZPU7cY9bjGiNqB3+/IvUSCQB1eVamAd2IQX7hzTA==
 
 "@esbuild/android-arm64@0.16.11":
   version "0.16.11"
@@ -1580,11 +1580,6 @@
     tiny-glob "^0.2.9"
     tslib "^2.4.0"
 
-"@pmndrs/cannon-worker-api@^2.3.2":
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/@pmndrs/cannon-worker-api/-/cannon-worker-api-2.3.2.tgz#70f92f989552672d5f8ef29ba891e6582d69c0b7"
-  integrity sha512-+4YGTH7XfSvUYUa65LoltcDMRLu3lr7rFtHT9dmeCeu2JJ7Zg2xBFJ5wiWSJmcM1ECh2R0YDcROdEQ1JKpOgFA==
-
 "@radix-ui/react-icons@^1.0.3":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@radix-ui/react-icons/-/react-icons-1.1.1.tgz#38d2aa548035dd3b799c169bd17177b1cec3152b"
@@ -1636,15 +1631,6 @@
   resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.6.1.tgz#913d3a68c5cbc1124fdb18eff919432f7b6abdde"
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
-"@react-three/cannon@^6.5.2":
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/@react-three/cannon/-/cannon-6.5.2.tgz#ef66147c474ab8c35825a4eae04073bd03bf9ca8"
-  integrity sha512-d7qH2XMVtHRkCaMUWpLkWSD9JPiE570gy8LoP7WBw+Ui+hI9ZiFx9HDaX5+Y6wzbGJd1WvELWaG9O0cOtk2rmw==
-  dependencies:
-    "@pmndrs/cannon-worker-api" "^2.3.2"
-    cannon-es "^0.20.0"
-    cannon-es-debugger "^1.0.0"
-
 "@react-three/drei@^9.48.1":
   version "9.48.1"
   resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.48.1.tgz#d6466f5f9dc9a8b0b83e817ff8d54987d5d7211d"
@@ -1683,14 +1669,14 @@
     suspend-react "^0.0.8"
     zustand "^3.7.1"
 
-"@react-three/rapier@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/@react-three/rapier/-/rapier-0.9.0.tgz#d2bdc97e5047ef52f0f73607c8388a8c589aaf5e"
-  integrity sha512-FElAWzPwyKdx+9zJT/TE1w1yLhY6IgTlYoXtcO4hNDoIvyErxexldp2kp+fiFQGtiL1CxJsHxeEyTXomXZ2MlA==
+"@react-three/rapier@^0.13.0":
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/@react-three/rapier/-/rapier-0.13.0.tgz#03722427313e65f53e9845dd91dce62d2ef1e773"
+  integrity sha512-/9EJzI8z+dRfnB+MY0eQhhI6ZxRjEVUAlZjcKIrbfV2wtsJ1CiuYp29uHcNDWt3SXL/RMLDZ4Jje06c45GmstQ==
   dependencies:
-    "@dimforge/rapier3d-compat" "0.9.0"
-    three-stdlib "^2.15.0"
-    use-asset "^1.0.4"
+    "@dimforge/rapier3d-compat" "0.11.1"
+    three-stdlib "2.21.6"
+    use-asset "1.0.4"
 
 "@repeaterjs/repeater@3.0.4":
   version "3.0.4"
@@ -2573,16 +2559,6 @@ caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001406:
   version "1.0.30001441"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001441.tgz#987437b266260b640a23cd18fbddb509d7f69f3e"
   integrity sha512-OyxRR4Vof59I3yGWXws6i908EtGbMzVUi3ganaZQHmydk1iwDhRnvaPG2WaR0KcqrDFKrxVZHULT396LEPhXfg==
-
-cannon-es-debugger@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/cannon-es-debugger/-/cannon-es-debugger-1.0.0.tgz#28c6679b30dcf608e978225239f447a8fe55ccb4"
-  integrity sha512-sE9lDOBAYFKlh+0w+cvWKwUhJef8HYnUSVPWPL0jD15MAuVRQKno4QYZSGxgOoJkMR3mQqxL4bxys2b3RSWH8g==
-
-cannon-es@^0.20.0:
-  version "0.20.0"
-  resolved "https://registry.yarnpkg.com/cannon-es/-/cannon-es-0.20.0.tgz#bf2f62a674701f37e3d861c90668a32d4d32f082"
-  integrity sha512-eZhWTZIkFOnMAJOgfXJa9+b3kVlvG+FX4mdkpePev/w/rP5V8NRquGyEozcjPfEoXUlb+p7d9SUcmDSn14prOA==
 
 capital-case@^1.0.4:
   version "1.0.4"
@@ -6669,10 +6645,10 @@ three-mesh-bvh@^0.5.19:
   resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.5.19.tgz#72d489856561d01ef7d4add81f0c82d3fb644d09"
   integrity sha512-Q8huT0NautyR4afW0oMlOz8a4qm3b1jQ1ccMLF/TZ0rA4i58HljsnBjCLEDLQtIINZyLtZPdw60mrD81V/TZDA==
 
-three-stdlib@^2.15.0, three-stdlib@^2.20.4:
-  version "2.21.1"
-  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.21.1.tgz#023deb85adf25d3a47ab54d5fc4887e4df148d33"
-  integrity sha512-E4q7nKuM5PFGX6/13MUsXQDRgtQkMPD6aQggqdKRewbNV/sWY+6EVW3YVVe5xhkl+rV8khOf0xPSqkl5UDabMQ==
+three-stdlib@2.21.6, three-stdlib@^2.20.4:
+  version "2.21.6"
+  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.21.6.tgz#764711f317a355a47138a8a5abe95bff0a0bbd45"
+  integrity sha512-J3DyCVKIpYJw7TWG4mQKKPpMgswq4pRRPMtxgipKedpUj8e4EgGtNLt623ws9RHvphPPamTHXacaEzOrm3dFsA==
   dependencies:
     "@babel/runtime" "^7.16.7"
     "@types/offscreencanvas" "^2019.6.4"
@@ -7048,7 +7024,7 @@ url-parse@^1.5.3:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
-use-asset@^1.0.4:
+use-asset@1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/use-asset/-/use-asset-1.0.4.tgz#506caafc29f602890593799e58b577b70293a6e2"
   integrity sha512-7/hqDrWa0iMnCoET9W1T07EmD4Eg/Wmoj/X8TGBc++ECRK4m5yTsjP4O6s0yagbxfqIOuUkIxe2/sA+VR2GxZA==
