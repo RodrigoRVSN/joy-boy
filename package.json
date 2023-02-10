@@ -59,7 +59,7 @@
     "next-transpile-modules": "^10.0.0",
     "prettier": "^2.8.1",
     "r3f-perf": "^6.6.3",
-    "tsconfig-paths": "^4.1.1",
+    "tsconfig-paths": "^4.1.2",
     "typescript": "latest",
     "vite-tsconfig-paths": "^4.0.3",
     "vitest": "latest"
