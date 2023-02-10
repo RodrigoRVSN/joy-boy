@@ -10,7 +10,6 @@ export const Islands = () => {
       <About />
 
       <Experience />
-
     </>
   )
 }

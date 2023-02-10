@@ -1,5 +1,6 @@
 import { Sky } from '@react-three/drei'
 import { Physics } from '@react-three/rapier'
+import { ModalProvider } from '@App/core/context/ModalContext'
 import { Lights } from '../Lights'
 import { Islands } from './Islands'
 import { Ocean } from './Ocean'
@@ -10,16 +11,18 @@ export const Experience = () => {
     <>
       <color args={['blue']} attach='background' />
 
-      <Sky sunPosition={[1, 2, 3]}/>
+      <Sky sunPosition={[1, 2, 3]} />
 
       <Physics>
         <Lights />
 
-        <Islands />
+        <ModalProvider>
+          <Islands />
 
-        <Ship />
+          <Ship />
 
-        <Ocean />
+          <Ocean />
+        </ModalProvider>
       </Physics>
     </>
   )
