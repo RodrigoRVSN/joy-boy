@@ -4,6 +4,11 @@
   gap: 2rem;
   margin-bottom: 1rem;
   line-height: 1.7rem;
+  list-style-position: inside;
+}
+
+.container + .container {
+  margin-top: 4rem;
 }
 
 .about__title {
