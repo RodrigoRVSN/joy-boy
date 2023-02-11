@@ -11,7 +11,7 @@ export default function Home (): JSX.Element {
   return (
     <>
       <Head>
-        <title>Portfólio - Rodrigo Victor</title>
+        <title>Portfólio 🦜 - Rodrigo Victor</title>
       </Head>
 
       <KeyboardControls map={keyboardMap}>
