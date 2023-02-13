@@ -1631,26 +1631,28 @@
   resolved "https://registry.yarnpkg.com/@react-spring/types/-/types-9.6.1.tgz#913d3a68c5cbc1124fdb18eff919432f7b6abdde"
   integrity sha512-POu8Mk0hIU3lRXB3bGIGe4VHIwwDsQyoD1F394OK7STTiX9w4dG3cTLljjYswkQN+hDSHRrj4O36kuVa7KPU8Q==
 
-"@react-three/drei@^9.48.1":
-  version "9.48.1"
-  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.48.1.tgz#d6466f5f9dc9a8b0b83e817ff8d54987d5d7211d"
-  integrity sha512-48g2FbQoioOtCf5SFtHPFMMBXT3cDBpZBKAz/2lPoWdCEmitRFllwCnsqmxAtRUVmqAl4tYmmkAXu3Jy3PZUFQ==
+"@react-three/drei@^9.56.24":
+  version "9.56.24"
+  resolved "https://registry.yarnpkg.com/@react-three/drei/-/drei-9.56.24.tgz#b08b6f47f5bb817be3a122afffd9afbf0ff88dbf"
+  integrity sha512-sxM+l3dos6i9EYgWacLZ7ts752YjopftVcToR2U+buoKCIJ+xCNPAWh7Y9MggL+x/z82D1ItQmA+vdfj9aoyBw==
   dependencies:
     "@babel/runtime" "^7.11.2"
     "@react-spring/three" "^9.3.1"
-    "@use-gesture/react" "^10.2.0"
-    detect-gpu "^5.0.1"
+    "@use-gesture/react" "^10.2.24"
+    camera-controls "^2.1.0"
+    detect-gpu "^5.0.10"
     glsl-noise "^0.0.0"
     lodash.clamp "^4.0.3"
     lodash.omit "^4.5.0"
     lodash.pick "^4.4.0"
+    maath "^0.5.2"
     meshline "^3.1.6"
     react-composer "^5.0.3"
     react-merge-refs "^1.1.0"
     stats.js "^0.17.0"
     suspend-react "^0.0.8"
-    three-mesh-bvh "^0.5.19"
-    three-stdlib "^2.20.4"
+    three-mesh-bvh "^0.5.23"
+    three-stdlib "^2.21.8"
     troika-three-text "^0.47.1"
     utility-types "^3.10.0"
     zustand "^3.5.13"
@@ -1986,17 +1988,17 @@
     "@typescript-eslint/types" "5.47.1"
     eslint-visitor-keys "^3.3.0"
 
-"@use-gesture/core@10.2.23":
-  version "10.2.23"
-  resolved "https://registry.yarnpkg.com/@use-gesture/core/-/core-10.2.23.tgz#ed5892e86b4ad537613b6ab83111ca58341e40c0"
-  integrity sha512-Ynap/Uh6RX1Vgn3zNmFTyKapapdf7Av+GzAe6h+RsBZaxMF1z3cK6aohHPJP6T1hLrPyH/yehxa7RBqyESG9RA==
+"@use-gesture/core@10.2.24":
+  version "10.2.24"
+  resolved "https://registry.yarnpkg.com/@use-gesture/core/-/core-10.2.24.tgz#88d13a60954ba62463c774acb92d12bf7b3d810c"
+  integrity sha512-ZL7F9mgOn3Qlnp6QLI9jaOfcvqrx6JPE/BkdVSd8imveaFTm/a3udoO6f5Us/1XtqnL4347PsIiK6AtCvMHk2Q==
 
-"@use-gesture/react@^10.2.0":
-  version "10.2.23"
-  resolved "https://registry.yarnpkg.com/@use-gesture/react/-/react-10.2.23.tgz#744f7fb68e904721a2bf3d8bffd40e446b86c82a"
-  integrity sha512-anj9j3Lm4l+/s60Jv1FD2m13r+T+aYstSHUT62hTugojM64LPe9XatfEVHRyWOrGjRU2buQhlm03xN8oxkg/OQ==
+"@use-gesture/react@^10.2.24":
+  version "10.2.24"
+  resolved "https://registry.yarnpkg.com/@use-gesture/react/-/react-10.2.24.tgz#bc13780381e786b286f099f69ea3801bb9ed27a5"
+  integrity sha512-rAZ8Nnpu1g4eFzqCPlaq+TppJpMy0dTpYOQx5KpfoBF4P3aWnCqwj7eKxcmdIb1NJKpIJj50DPugUH4mq5cpBg==
   dependencies:
-    "@use-gesture/core" "10.2.23"
+    "@use-gesture/core" "10.2.24"
 
 "@vitejs/plugin-react@^3.0.0":
   version "3.0.0"
@@ -2554,6 +2556,11 @@ camelcase@^5.0.0, camelcase@^5.3.1:
   version "5.3.1"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
+
+camera-controls@^2.1.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/camera-controls/-/camera-controls-2.2.1.tgz#126b63f46ca15231ce4c06d80370d741bfb95365"
+  integrity sha512-L5E9m8ueYcOau/rN5vAM/bP7IwWcSmfG2Vv58iw/fnq7UCKAL6EvriEiQOOTZ10U7Q6dmmXIlHFnoJfHXHTTlA==
 
 caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001406:
   version "1.0.30001441"
@@ -3147,10 +3154,10 @@ dependency-graph@^0.11.0:
   resolved "https://registry.yarnpkg.com/dependency-graph/-/dependency-graph-0.11.0.tgz#ac0ce7ed68a54da22165a85e97a01d53f5eb2e27"
   integrity sha512-JeMq7fEshyepOWDfcfHK06N3MhyPhz++vtqWhMT5O9A3K42rdsEDpfdVqjaqaAhsw6a+ZqeDvQVtD0hFHQWrzg==
 
-detect-gpu@^5.0.1:
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.4.tgz#4495c303ff181d0c64bf9f54310871fe957c8e4f"
-  integrity sha512-DyAa8aL2yjMNHb85a51eWP9DPSKjKGvgdcUSRzUNzHgx4QckxOX8RUTUFCJQiSxEegzP7O0UeVNkm7TIUyMW8A==
+detect-gpu@^5.0.10:
+  version "5.0.11"
+  resolved "https://registry.yarnpkg.com/detect-gpu/-/detect-gpu-5.0.11.tgz#43bac2bcc62e1420cb6c1c59d11fa18ce3a291fe"
+  integrity sha512-lJDxdgXSyeB9qZbrz4mNp9QvqA8zbM/PbJiCr80g/YVAUdy0bzlbDpW+5OeiGs7fHO7os9EWUzBnIVPBu9oDlw==
   dependencies:
     webgl-constants "^1.1.1"
 
@@ -5174,6 +5181,11 @@ lz-string@^1.4.4:
   resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
   integrity sha512-0ckx7ZHRPqb0oUm8zNr+90mtf9DQB60H1wMCjBtfi62Kl3a7JbHob6gA2bC+xRvZoOL+1hzUK8jeuEIQE8svEQ==
 
+maath@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/maath/-/maath-0.5.2.tgz#b1adc883360e45eff3041a2bce45f8cdc0cd6d43"
+  integrity sha512-MFjfnXF5CzZaVnBuKc9y1FJh/BiPGqf19NH8Jm4o/jKTxuQ3RyPkcSIpuwdDhXrWROVKAxi3KjmHFUNMuIndbg==
+
 magic-string@^0.27.0:
   version "0.27.0"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.27.0.tgz#e4a3413b4bab6d98d2becffd48b4a257effdbbf3"
@@ -6640,15 +6652,15 @@ text-table@^0.2.0:
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
   integrity sha512-N+8UisAXDGk8PFXP4HAzVR9nbfmVJ3zYLAWiTIoqC5v5isinhr+r5uaO8+7r3BMfuNIufIsA7RdpVgacC2cSpw==
 
-three-mesh-bvh@^0.5.19:
-  version "0.5.19"
-  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.5.19.tgz#72d489856561d01ef7d4add81f0c82d3fb644d09"
-  integrity sha512-Q8huT0NautyR4afW0oMlOz8a4qm3b1jQ1ccMLF/TZ0rA4i58HljsnBjCLEDLQtIINZyLtZPdw60mrD81V/TZDA==
+three-mesh-bvh@^0.5.23:
+  version "0.5.23"
+  resolved "https://registry.yarnpkg.com/three-mesh-bvh/-/three-mesh-bvh-0.5.23.tgz#08e5b629144b48b11acbd433519680e457d398ed"
+  integrity sha512-nyk+MskdyDgECqkxdv57UjazqqhrMi+Al9PxJN6yFtx1CTW4r0eCQ27FtyYKY5gCIWhxjtNfWYDPVy8lzx6LkA==
 
-three-stdlib@^2.15.0, three-stdlib@^2.20.4:
-  version "2.21.1"
-  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.21.1.tgz#023deb85adf25d3a47ab54d5fc4887e4df148d33"
-  integrity sha512-E4q7nKuM5PFGX6/13MUsXQDRgtQkMPD6aQggqdKRewbNV/sWY+6EVW3YVVe5xhkl+rV8khOf0xPSqkl5UDabMQ==
+three-stdlib@^2.15.0, three-stdlib@^2.21.8:
+  version "2.21.8"
+  resolved "https://registry.yarnpkg.com/three-stdlib/-/three-stdlib-2.21.8.tgz#37b11b7f62d07b10742c212153b14db21433b3c6"
+  integrity sha512-kqisiKvO4mSy59v5vWqBQSH8famLxp7Z51LxpMJI9GwDxqODaW02rhIwmjYDEzZWNFpjZpoDHVGbdpeHf8h3SA==
   dependencies:
     "@babel/runtime" "^7.16.7"
     "@types/offscreencanvas" "^2019.6.4"
