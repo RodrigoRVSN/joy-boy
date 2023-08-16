@@ -7,7 +7,7 @@ import { useMoveShip } from './hooks/useMoveShip'
 export const Ship = () => {
   const { body, move } = useMoveShip()
 
-  const shipModel = useGLTF('https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/ship-dark/model.gltf')
+  const shipModel = useGLTF('/assets/ship.gltf')
 
   useFrame((state, delta) => {
     if (!body.current) return
@@ -37,7 +37,7 @@ export const Ship = () => {
             args={[45, 1.2, 1, 1000]}
           />
 
-          <primitive object={shipModel.scene}/>
+          <primitive object={shipModel.scene} />
         </group>
       </RigidBody>
     </>

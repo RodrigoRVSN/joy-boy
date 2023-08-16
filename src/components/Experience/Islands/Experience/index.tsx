@@ -22,7 +22,7 @@ export const Experience = () => {
     <>
       <GenericIsland
         title='Experience'
-        objectUrl='https://market-assets.fra1.cdn.digitaloceanspaces.com/market-assets/models/spilling-coffee/model.gltf'
+        objectUrl='/assets/coffe.gltf'
         islandNumber={1}
         position={[20, 0, -90]}
         onClickObject={handleOpenModal}
